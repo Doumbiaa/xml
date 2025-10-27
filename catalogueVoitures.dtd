@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DTD catalogue voiture-->
+<!-- www.linkedin.com/in/cheikh-doumbia -->
+
+<!-- les niveaux -->
+<!ELEMENT catalogueVoitures (voiture)+>
+<!ELEMENT voiture (marque, modele, caracteristiques, prix)>
+<!ELEMENT caracteristiques (moteur, couleur, places, portes)>
+
+<!-- type des elements -->
+<!ELEMENT marque (#PCDATA)>
+<!ELEMENT modele (#PCDATA)>
+<!ELEMENT prix (#PCDATA)>
+<!ELEMENT moteur (#PCDATA)>
+<!ELEMENT couleur (#PCDATA)>
+<!ELEMENT places (#PCDATA)>
+<!ELEMENT portes (#PCDATA)>
+
+<!-- liste d'attributs -->
+<!ATTLIST voiture 
+    id ID #REQUIRED
+    disponible (oui | non) #REQUIRED
+    type CDATA #REQUIRED
+    >
+<!ATTLIST moteur 
+    cylindree CDATA #REQUIRED
+    carburant CDATA #REQUIRED
+    >
+<!ATTLIST prix devise CDATA #REQUIRED>

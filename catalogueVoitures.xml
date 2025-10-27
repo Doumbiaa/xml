@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogueVoitures SYSTEM "catalogueVoitures.dtd">
+<!--catalogueVoitures xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:noNamespaceSchemaLocation="catalogueVoitures.xsd"-->
+
+
+ <catalogueVoitures>
+  <voiture id="V001" disponible="oui" type="SUV">
+    <marque>Toyota</marque>
+    <modele>RAV4</modele>
+    <caracteristiques>
+      <moteur cylindree="2500" carburant="Essence"/>
+      <couleur>Rouge</couleur>
+      <places>5</places>
+      <portes>5</portes>
+    </caracteristiques>
+    <prix devise="EUR">35000</prix>
+  </voiture>
+
+  <voiture id="V002" disponible="non" type="Berline">
+    <marque>BMW</marque>
+    <modele>Serie 3</modele>
+    <caracteristiques>
+      <moteur cylindree="2000" carburant="Diesel"/>
+      <couleur>Noir</couleur>
+      <places>5</places>
+      <portes>4</portes>
+    </caracteristiques>
+    <prix devise="EUR">42000</prix>
+  </voiture>
+</catalogueVoitures>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- schema catalogue voiture-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- elemeent racine-->
+    <xs:element name="catalogueVoitures">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="voiture" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marque" type="xs:string" />
+                            <xs:element name="modele" type="xs:string"  />
+                            <xs:element name="caracteristiques">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="moteur">
+                                            <xs:complexType>
+                                                <xs:attribute name="cylindree" type="xs:unsignedInt" use="required" />
+                                                <xs:attribute name="carburant" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="couleur" type="xs:string" />
+                                        <xs:element name="places" type="xs:unsignedInt" />
+                                        <xs:element name="portes" type="xs:unsignedInt" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>    
+                            <xs:element name="prix">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:decimal">
+                                            <xs:attribute name="devise" type="xs:string" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:ID" use="required" />
+                        <xs:attribute name="type" type="xs:string" use="required" />
+                        <xs:attribute name="disponible">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="oui"/>
+                                    <xs:enumeration value="non"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
