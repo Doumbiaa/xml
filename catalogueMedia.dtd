@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Catalogue de films et series -->
+<!-- DTD Catalogue de films et series -->
+
+<!-- premier niveeau -->
+<!ELEMENT catalogueMedia (media+) >
+
+<!-- deuxième niveeau -->
+<!ELEMENT media (titre, type, annee, realisateur+, genres, duree?, saisons?, episodes? , disponible, description?) >
+
+<!-- troisième niveeau -->
+<!ELEMENT realisateur (nom, prenom) >
+<!ELEMENT genres (genre)+ >
+
+<!-- type des elements -->
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT type (#PCDATA) >
+<!ELEMENT annee (#PCDATA) >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT genre (#PCDATA) >
+<!ELEMENT duree (#PCDATA) >
+<!ELEMENT disponible (#PCDATA) >
+<!ELEMENT description (#PCDATA) >
+<!ELEMENT saisons (#PCDATA) >
+<!ELEMENT episodes (#PCDATA) >
+
+<!-- liste d'attributs -->
+<!ATTLIST media id ID #REQUIRED >

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogueMedia SYSTEM "catalogueMedia.dtd">
+<!-- Catalogue de films et séries -->
+<catalogueMedia>
+  <media id="M001">
+    <titre>Inception</titre>
+    <type>Film</type>
+    <annee>2010</annee>
+    <realisateur>
+      <nom>Nolan</nom>
+      <prenom>Christopher</prenom>
+    </realisateur>
+    <genres>
+      <genre>Science-Fiction</genre>
+      <genre>Thriller</genre>
+    </genres>
+    <duree>148</duree> <!-- en minutes -->
+    <disponible>true</disponible>
+    <description>Un voleur qui s’introduit dans les rêves des gens pour voler des secrets.</description>
+  </media>
+
+  <media id="M002">
+    <titre>Stranger Things</titre>
+    <type>Série</type>
+    <annee>2016</annee>
+    <realisateur>
+      <nom>Duffer</nom>
+      <prenom>Matt et Ross</prenom>
+    </realisateur>
+    <genres>
+      <genre>Science-Fiction</genre>
+      <genre>Horreur</genre>
+      <genre>Drame</genre>
+    </genres>
+    <saisons>5</saisons>
+    <episodes>43</episodes>
+    <disponible>true</disponible>
+    <description>Des enfants enquêtent sur des événements surnaturels dans leur ville.</description>
+  </media>
+
+  <media id="M003">
+    <titre>The Godfather</titre>
+    <type>Film</type>
+    <annee>1972</annee>
+    <realisateur>
+      <nom>Coppola</nom>
+      <prenom>Francis Ford</prenom>
+    </realisateur>
+    <genres>
+      <genre>Crime</genre>
+      <genre>Drame</genre>
+    </genres>
+    <duree>175</duree>
+    <disponible>false</disponible>
+    <description>La saga d'une famille mafieuse italo-américaine.</description>
+  </media>
+</catalogueMedia>

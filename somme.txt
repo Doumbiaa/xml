@@ -1,1 +1,11 @@
 Kalam
+
+
+
+----------------- Dim_Actors 
+
+  INSERT INTO `dim_actor` (
+    SELECT actor_id, actor.first_name, actor.last_name,
+    CONCAT(actor.first_name, ' ', actor.last_name) AS full_name
+    FROM sakila.actor
+  )
